@@ -3,7 +3,7 @@ require 'till'
 describe Till do
 
   it 'can add an item' do
-    subject.add(:latte)
-    expect(subject.items).to eq [:latte]
+    subject.add("Tea")
+    expect(subject.total).to eq 3.65
   end
 end

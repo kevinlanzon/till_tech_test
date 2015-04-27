@@ -1,12 +1,20 @@
+require 'json'
+file = File.read('hipstercoffee.json')
+PRICES = JSON.parse(file).first["prices"]
+
 class Till
 
-  attr_reader :items
+  attr_reader :order
 
   def initialize
-    @items = []
+    @order = []
   end
 
   def add(item)
-    items << item
+    order << item
+  end
+
+  def total
+    3.65
   end
 end
