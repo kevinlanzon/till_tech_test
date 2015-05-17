@@ -1,5 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/kevinlanzon/till_tech_test/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/till_tech_test)
 [![Build Status](https://travis-ci.org/kevinlanzon/till_tech_test.svg?branch=master)](https://travis-ci.org/kevinlanzon/till_tech_test)
+[![Code Climate](https://codeclimate.com/github/kevinlanzon/till_tech_test/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/till_tech_test)
 
 Till tech test
 ==============
