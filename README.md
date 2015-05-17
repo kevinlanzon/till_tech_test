@@ -4,7 +4,7 @@
 Till tech test
 ==============
 
-A tech test set by Makers Academy for practice.
+A practice tech test set by Makers Academy.
 
 ![a till](/images/till.jpg)
 
