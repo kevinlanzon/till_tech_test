@@ -4,4 +4,4 @@ script:
 
   addons:
   code_climate:
-    repo_token: b73301f40a9f24b18aa4fa3518a8211c705eb7653ccc0865450f1fd0e092b7f9
+    repo_token: b73301f40a9f24b18aa4fa3518a8211c705eb7653ccc0865450f1fd0e092b7f9 bundle exec rake
