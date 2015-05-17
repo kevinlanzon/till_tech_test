@@ -4,16 +4,31 @@ class Till
 
   include ItemList
 
-  attr_reader :total, :tax_total, :orders
+  attr_reader :total, :tax_total, :items_ordered
 
   def initialize
     super # sends no arguments to the higher-up method, even if arguments were passed to the current method
     @total = 0
     @tax_total = 0
-    @orders = {}
+    @items_ordered = {}
   end
 
   def item_price(product)
-    data_list[0]['prices'][0][product]
+    data_hash[0]['prices'][0][product]
+  end
+
+  def line_order(product, quantity)
+    total = line_total(product, quantity)
+    @items_ordered[product.to_sym] = {total: total, quantity: quantity}
+  end
+
+  def line_total(product, quantity)
+    item_price(product) * quantity
+  end
+
+  def pre_tax_total
+    @items_ordered.each do |key, value|
+      value.each { |key, value| @total += value if key == :total }
+    end
   end
 end
