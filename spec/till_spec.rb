@@ -32,4 +32,10 @@ describe Till do
       expect(subject.total).to eq 7.50
     end
   end
+
+  context 'calculates tax' do
+    it 'at a rate of 8.64%' do
+      expect(Till::TAX).to eq 0.0864
+    end
+  end
 end

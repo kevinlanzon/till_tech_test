@@ -4,6 +4,8 @@ class Till
 
   include ItemList
 
+  TAX = 0.0864
+
   attr_reader :total, :tax_total, :items_ordered
 
   def initialize
