@@ -33,4 +33,8 @@ class Till
       value.each { |key, value| @total += value if key == :total }
     end
   end
+
+  def calculate_tax(total)
+    @tax_total = (total * TAX).round(2)
+  end
 end

@@ -37,5 +37,10 @@ describe Till do
     it 'at a rate of 8.64%' do
       expect(Till::TAX).to eq 0.0864
     end
+
+    it 'on the total cost of £10' do
+      subject.calculate_tax(10)
+      expect(subject.tax_total).to eq 0.86
+    end
   end
 end
