@@ -27,7 +27,7 @@ describe Till do
     end
 
     it 'has a pre tax total' do
-      subject.line_order 'Americano', 2
+      subject.order 'Americano', 2
       subject.pre_tax_total
       expect(subject.total).to eq 7.50
     end
@@ -44,8 +44,14 @@ describe Till do
     end
 
     it ' and adds it onto the sale of a Single Espresso' do
-      (subject.line_order('Single Espresso', 1))
+      subject.order('Single Espresso', 1)
       expect(subject.sale).to eq 2.23
+    end
+
+    it ' and adds it onto the sale of a few products' do
+      subject.order('Single Espresso', 1)
+      subject.order('Tea', 2)
+      expect(subject.sale).to eq 10.16
     end
   end
 end

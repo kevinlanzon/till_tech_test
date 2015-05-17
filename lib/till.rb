@@ -19,7 +19,7 @@ class Till
     data_hash[0]['prices'][0][product]
   end
 
-  def line_order(product, quantity)
+  def order(product, quantity)
     total = line_total(product, quantity)
     @items_ordered[product.to_sym] = {total: total, quantity: quantity}
   end
