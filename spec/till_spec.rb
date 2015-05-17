@@ -42,5 +42,10 @@ describe Till do
       subject.calculate_tax(10)
       expect(subject.tax_total).to eq 0.86
     end
+
+    it ' and adds it onto the sale of a Single Espresso' do
+      (subject.line_order('Single Espresso', 1))
+      expect(subject.sale).to eq 2.23
+    end
   end
 end

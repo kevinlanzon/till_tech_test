@@ -37,4 +37,10 @@ class Till
   def calculate_tax(total)
     @tax_total = (total * TAX).round(2)
   end
+
+  def sale
+    pre_tax_total
+    calculate_tax(@total)
+    @total += @tax_total
+  end
 end
