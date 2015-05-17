@@ -1,9 +1,7 @@
 require 'till'
 
 describe Till do
-
   context 'starts with' do
-
     it 'no orders' do
       expect(subject.items_ordered.empty?).to be true
     end
