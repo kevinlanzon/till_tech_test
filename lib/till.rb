@@ -25,7 +25,7 @@ class Till
   end
 
   def line_total(product, quantity)
-    item_price(product) * quantity
+    item_price(product * quantity)
   end
 
   def pre_tax_total
