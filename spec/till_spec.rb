@@ -41,12 +41,12 @@ describe Till do
       expect(subject.tax_total).to eq 0.86
     end
 
-    it ' and adds it onto the sale of a Single Espresso' do
+    it 'and adds it onto the sale of a Single Espresso' do
       subject.add('Single Espresso', 1)
       expect(subject.sale).to eq 2.23
     end
 
-    it ' and adds it onto the sale of a few products' do
+    it 'and adds it onto the sale of a few products' do
       subject.add('Single Espresso', 1)
       subject.add('Tea', 2)
       expect(subject.sale).to eq 10.16
