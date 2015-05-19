@@ -1,6 +1,7 @@
 require 'json'
 
 module ItemList
+
   attr_reader :data_hash
 
   def initialize

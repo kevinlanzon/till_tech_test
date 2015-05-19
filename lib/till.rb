@@ -1,6 +1,7 @@
 require_relative 'item_list'
 
 class Till
+
   include ItemList
 
   TAX = 0.0864
